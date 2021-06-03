@@ -1,3 +1,12 @@
+"""
+Example:
+s1 = 'and'
+s2 = 'art'
+
+Resp: Yes
+"""
+
+
 def twoStrings(s1, s2):
     a = set(list(s1)) 
     b = set(list(s2)) 
