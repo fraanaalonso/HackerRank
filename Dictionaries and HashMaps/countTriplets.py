@@ -27,5 +27,5 @@ def countTriplets(arr, r):
 
 
 if __name__ == '__main__':
-    result = countTriplets([1,3,9,9,27,81], 3)
+    result = countTriplets([1,2,2,4], 2)
     print(result)
