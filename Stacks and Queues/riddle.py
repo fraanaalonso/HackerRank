@@ -16,7 +16,6 @@ def riddle(arr):
         d[i]=b
         k = 0
     arr = []
-    s = 2
     for key, value in d.items():
         if key == 1:
             aux[key] = max(value)

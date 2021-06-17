@@ -13,18 +13,16 @@ import sys
 #
 
 def minimumBribes(q):
-    c = 1
-    count = 0
-    for value in q:
-        if (value - c) == 2:
-            count+=2
-        elif (value - c) == 1:
-            count += 1
-        elif (value - c) > 2:
-            print('Too chaotic')
+    moves = 0 
+    q = [p-1 for p in q]
+    for i,p in enumerate(q):
+        if p - i > 2:
+            print("Too chaotic")
             return
-        c+=1
-    print(count)
+        for j in range(max(p-1,0),i):
+            if q[j] > p:
+                moves += 1
+    print(moves)
 
 if __name__ == '__main__':
     q = [1, 2, 5, 3, 7, 8, 6, 4]
